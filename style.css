@@ -1,0 +1,174 @@
+body {
+    font-family: sans-serif;
+    background-color: #ffefd5;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 30px;
+    /* Tambahkan properti display dan flex jika Anda ingin mengatur posisi gambar dan teks */
+    /* Contoh jika ingin gambar dan teks berada dalam satu baris: */
+    /* display: flex; */
+    /* flex-direction: column; /* Atur menjadi kolom agar gambar di atas teks */
+    /* align-items: center; */
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #000000;
+}
+
+.profile-image-container {
+    width: 150px; /* Sesuaikan ukuran lingkaran */
+    height: 150px; /* Harus sama dengan width untuk menjadi lingkaran sempurna */
+    border-radius: 50%; /* Membuat bentuk lingkaran */
+    overflow: hidden; /* Menyembunyikan bagian gambar di luar lingkaran */
+    margin: 0 auto 20px; /* Mengatur margin agar berada di tengah dan ada jarak ke bawah */
+}
+
+.profile-image-container img {
+    width: 100%; /* Membuat gambar mengisi container */
+    height: 100%; /* Membuat gambar mengisi container */
+    object-fit: cover; /* Memastikan gambar menutupi container tanpa terdistorsi */
+}
+
+.portfolio-section {
+    margin-bottom: 40px;
+}
+
+.portfolio-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #000000;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-info {
+    padding: 20px;
+    align-items: center;
+}
+
+.project-info img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.project-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #eee;
+}
+
+.project-info p {
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.project-links a {
+    display: inline-block;
+    background-color: #555;
+    color: #f0f0f0;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.project-links a:hover {
+    background-color: #777;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #333;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+body.dark-theme {
+    background-color: #1e1e1e; /* Latar belakang lebih gelap */
+    color: #f0f0f0; /* Warna teks lebih terang */
+}
+
+body.dark-theme header {
+    border-bottom-color: #555;
+}
+
+body.dark-theme header h1 {
+    color: #fff;
+}
+
+body.dark-theme header p {
+    color: #aaa;
+}
+
+body.dark-theme .portfolio-section h2 {
+    color: #eee;
+    border-bottom-color: #555;
+}
+
+body.dark-theme .project-card {
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-theme .project-info h3 {
+    color: #fff;
+}
+
+body.dark-theme .project-info p {
+    color: #ccc;
+}
+
+body.dark-theme .project-links a {
+    background-color: #777;
+    color: #eee;
+}
+
+body.dark-theme .project-links a:hover {
+    background-color: #999;
+}
+
+body.dark-theme footer {
+    border-top-color: #555;
+    color: #aaa;
+}
