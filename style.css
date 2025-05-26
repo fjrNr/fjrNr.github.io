@@ -18,11 +18,6 @@ header {
     padding-bottom: 30px;
     border-bottom: 1px solid #333;
     margin-bottom: 30px;
-    /* Tambahkan properti display dan flex jika Anda ingin mengatur posisi gambar dan teks */
-    /* Contoh jika ingin gambar dan teks berada dalam satu baris: */
-    /* display: flex; */
-    /* flex-direction: column; /* Atur menjadi kolom agar gambar di atas teks */
-    /* align-items: center; */
 }
 
 header h1 {
@@ -35,17 +30,17 @@ header p {
 }
 
 .profile-image-container {
-    width: 150px; /* Sesuaikan ukuran lingkaran */
-    height: 150px; /* Harus sama dengan width untuk menjadi lingkaran sempurna */
-    border-radius: 50%; /* Membuat bentuk lingkaran */
-    overflow: hidden; /* Menyembunyikan bagian gambar di luar lingkaran */
-    margin: 0 auto 20px; /* Mengatur margin agar berada di tengah dan ada jarak ke bawah */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
 }
 
 .profile-image-container img {
-    width: 100%; /* Membuat gambar mengisi container */
-    height: 100%; /* Membuat gambar mengisi container */
-    object-fit: cover; /* Memastikan gambar menutupi container tanpa terdistorsi */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .portfolio-section {
